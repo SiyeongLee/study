@@ -58,9 +58,14 @@ public class SimpleMoveController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "Door")
-            Destroy(collision.gameObject);
-       SceneManager.LoadScene("Map1");
-        ss
+            SceneManager.LoadScene("Map1");
+
+        if (collision.name == "Door2")
+            SceneManager.LoadScene("Map2");
+
+        if (collision.name == "Door3")
+            SceneManager.LoadScene("Map3");
+
 
     }
    
